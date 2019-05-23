@@ -45,8 +45,9 @@ def find_diff_syscall():
                 finaldict[newlst[1]] = 1
 
     print("Different SysCall with their count")
+    print("I have used 'syscall' to uniquely identify syscalls")
     for i, j in finaldict.iteritems():
-        print("Process " + str(i) + " made " + str(j) + " calls")
+        print("syscallno " + str(i) + " calls " + str(j))
     print("")
 
 
